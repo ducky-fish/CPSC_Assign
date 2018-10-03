@@ -4,12 +4,12 @@
  * David : UCID #
  * */
 
-package cpsc331.A1;											//Defining our package
+package cpsc331.A1;							//Defining our package
 public class SHufflepuff{
 	public static void main(String[] args) {
         	String user_input = args[0];			    	
         	boolean valid_input = isInt(user_input);
-        if(valid_input == true && args.length == 1){							//Scans input to see if argument is int           		
+        if(valid_input == true && args.length == 1){			//Scans input to see if argument is int           		
            		int user_int = Integer.parseInt(user_input);
            		if(user_int >= 0) {
            			int result = sHuffle(user_int);
@@ -22,8 +22,8 @@ public class SHufflepuff{
       		}
            	
       	else {
-      		System.out.println("Silly Muggle! One integer input is required.");					//error message for if the input is not an integer
-      	}																						//or if the input is more or less than 1
+      		System.out.println("Silly Muggle! One integer input is required.");	//error message for if the input is not an integer
+      	}										//or if the input is more or less than 1
 
      }
   	
