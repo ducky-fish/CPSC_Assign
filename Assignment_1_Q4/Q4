@@ -1,0 +1,64 @@
+A Simple — But Slow — Algorithm for This Computation
+Hermione has written Java program that implements shown in Figure 1.
+1. Give a reasonably short proof that the function f(n) = n is a bound function for this
+recursive algorithm.
+2. Write a complete, and well-written, proof of the following.
+Claim: For every non-negative integer n, if the sHuff algorithm is executed
+with n as input then this this execution of the algorithm eventually ends, and
+the n
+th Hufflepuff number, Hn, is returned as output.
+3. Complete a proof that the sHuff algorithm correctly solves the “Hufflepuff Hierarchy
+Computation” problem.
+2
+4. Write a Java program SHufflepuff that satisfies the following properties:
+• It is part of the cpsc331.A1 package.
+• Integer inputs and outputs are represented using Java’s int data type.
+• It includes a method, sHuffle, which receives an integer n, which computes the
+n
+th Hufflepuff number using the algorithm shown in Figure 1 if n ≥ 0 but which
+actually solves a more general computational problem:
+Extended Hufflepuff Computation
+Precondition: An integer n is given as input.
+Postcondition: If n ≥ 0 then the n
+th Hufflepuff number, Hn, is returned as
+output. An IllegalArgumentException is thrown otherwise.
+This method should not be public but should be accessible by other classes in
+the cpsc331.A1 package.
+• The main method should read its input from the command line. If either the number
+of inputs is incorrect, or the input is not an integer, then it should return the message
+Silly muggle! One integer input is required.
+If there is a single integer input, but it is negative, then the main method should
+return the message
+Silly muggle! The integer input cannot be negative.
+Otherwise —- when given a non-negative integer input n – it should report the
+corresponding Hufflepuff number Hn.
+A few sample runs of the program should therefore look like the following.
+> java cpsc331.A1.SHufflepuff 0
+> 10
+> java cpsc331.A1.SHufflepuff 1
+> 9
+> java cpsc331.A1.Shufflepuff 2
+> 8
+> java cpsc331.A1.Shufflepuff 3
+> 7
+> java cpsc331.A1.Shufflepuff 4
+> 6
+3
+> java cpsc331.A1.Shufflepuff -1
+> Silly muggle! The input integer cannot be negative.
+> java cpsc331.A1.Shufflepuff
+> Silly muggle! One integer input is required.
+> java cpsc331.A1.Shufflepuff xyz
+> Silly muggle! One integer input is required.
+5. Unfortunately, you will probably find that this program is very slow once the input integer
+gets to be much larger than 20 or 25: While you may be able to use it to compute H30
+and H35, I would not recommend that you try to use it to compute H50 or H60!
+Give a recurrence for the number TsHuff(n) of steps used by the sHuff algorithm (from
+Figure 1) when it is executed with a non-negative integer input n. Please use the uniform
+cost criterion to determine this, counting the steps that are numbered in the algorithm.
+6. Use your recurrence to prove that Tn(n) ≥
+
+3
+2
+n
+for every non-negative integer n
