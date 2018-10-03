@@ -30,13 +30,13 @@ public class SHufflepuff{
 
 //This is what will run the SHufflepuff algorithm
 private static int sHuffle(int n) {
-	int i = 0;
-	while(i <= 3) {
-		if(n==i) {
+	int h = 0;
+	while(h <= 3) {
+		if(n==h) {
 			int final_reply = 10-n;
 			return final_reply;
 		}
-		i++;
+		h++;
 	  }
 	return 4*sHuffle(n-1) - 6 * sHuffle(n-2) + 4 * sHuffle(n-3) - sHuffle(n-4);
 	
