@@ -1,3 +1,8 @@
+/* Group of 3
+ * Maiah Rutledge: UCID # 30024535
+ * Jared Hoshizaki: UCID # 30055963
+ * David Akobundu: UCID # 30025095
+ * */
 package cpsc331.A1;
 public class Hufflepuff{
 	public static void main(String args[]) {
@@ -31,20 +36,20 @@ public class Hufflepuff{
 			c++;
 		  }
 		int i = 3;
-		int h = 10;
-		int p = 9;
-		int a = 8;
-		int k = 7;
+		int hocus = 10;
+		int pocus = 9;
+		int abra = 8;
+		int kadabra = 7;
 		
 		while(i<n){
-			int result = 4 * k - 6 * a + 4 * p - h;
-			h =p;
-			p=a;
-			a=k;
-			k=result;
+			int shazam = 4 * kadabra - 6 * abra + 4 * pocus - hocus;
+			hocus =pocus;
+			pocus=abra;
+			abra=kadabra;
+			kadabra=shazam;
 			i = i+1;
 		}
-		return k;
+		return kadabra;
 	}
 
 	private static boolean isInt(String s){
