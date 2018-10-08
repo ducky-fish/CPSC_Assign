@@ -1,7 +1,7 @@
 /* Group of 3
  * Maiah Rutledge: UCID # 30024535
- * Jared : UCID #
- * David : UCID #
+ * Jared Hoshizaki: UCID # 30055963
+ * David Akobundu: UCID # 30025095
  * */
 
 package cpsc331.A1;							//Defining our package
