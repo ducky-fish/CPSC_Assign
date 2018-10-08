@@ -30,16 +30,23 @@ public class SHufflepuff{
 
 //This is what will run the SHufflepuff algorithm
 private static int sHuffle(int n) {
-	int h = 0;
-	while(h <= 3) {
-		if(n==h) {
-			int final_reply = 10-n;
-			return final_reply;
-		}
-		h++;
-	  }
-	return 4*sHuffle(n-1) - 6 * sHuffle(n-2) + 4 * sHuffle(n-3) - sHuffle(n-4);
-	
+	if(n>= 0) {
+                if (n == 0) {
+                        return 10;
+              	} 
+		else if (n == 1) {
+                        return 9;
+                } 
+		else if (n == 2) {
+                        return 8;
+                } 
+		else if (n == 3) {
+                        return 7;
+                } 
+		else {
+			//Bound Function: n-i
+			return 4*sHuffle(n - 1) - 6*sHuffle(n - 2) + 4*sHuffle(n - 3) - sHuffle(n - 4);
+                }
 }
 
 //This method is running a try catch with boolean results that we can call in our main method
